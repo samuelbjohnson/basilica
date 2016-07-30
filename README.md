@@ -1,6 +1,6 @@
 # Basilica
 
-A CMS for medium-sized websites, built on the Django framework, intended to permit (and require) focus on the *structure* of the content, not just the design of the site and the content itself.
+A CMS for non-trivial websites, built on the Django framework, intended to permit (and require) focus on the *structure* of the content, not just the design of the site and the content itself.
 
 ## Philosophy and Intent
 
