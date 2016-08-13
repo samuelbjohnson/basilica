@@ -33,6 +33,7 @@ virtualenv <env>
 source <env>/bin/activate
 
 pip install django
+pip install markdown
 ```
 
 where `<env>` is the name you'd like for your virtual environment.
