@@ -1,0 +1,9 @@
+{% extends parent_template %}
+
+{% block title %}{{ title.render }}{% endblock %}
+
+{% block content %}
+	{% for name, item in contents %}
+		{{ item.render }}
+	{% endfor %}
+{% endblock %}
