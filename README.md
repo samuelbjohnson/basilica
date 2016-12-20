@@ -33,7 +33,7 @@ virtualenv <env>
 source <env>/bin/activate
 
 pip install django
-pip install markdown
+pip install misaka
 ```
 
 where `<env>` is the name you'd like for your virtual environment.

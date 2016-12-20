@@ -2,7 +2,10 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.template import loader, Template
-import markdown
+from misaka import Markdown, HtmlRenderer
+
+markdown = Markdown(HtmlRenderer(), extensions=('fenced-code',))
+
 
 # Create your models here.
 
@@ -44,4 +47,4 @@ class MarkdownSection(Content):
 	template = loader.get_template('basilica/markdown.html')
 	
 	def get_content(self):
-		return markdown.markdown(self.content_value)
+		return markdown(self.content_value)
