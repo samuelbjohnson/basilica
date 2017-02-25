@@ -1,3 +1,5 @@
 
 /basilica_site.iml
 /.idea/
+
+**/*.pyc
