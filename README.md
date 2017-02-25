@@ -1,6 +1,6 @@
 # Basilica
 
-A CMS for non-trivial websites, built on the Django framework, intended to permit (and require) focus on the *structure* of the content, not just the design of the site and the content itself.
+A CMS for non-trivial websites, built on the [Django framework](https://www.djangoproject.com/), intended to permit (and require) focus on the *structure* of the content, not just the design of the site and the content itself.
 
 ## Philosophy and Intent
 
@@ -37,3 +37,21 @@ pip install misaka
 ```
 
 where `<env>` is the name you'd like for your virtual environment.
+
+## Running the project
+
+From within your VirtualEnv environment, `cd` to the base directory for the project. Basilica is based on the [Django framework](https://www.djangoproject.com/), so the project is run via the `manage.py` script in the base directory.
+
+The `basilica_site` module contains an example Basilica site. You can start it by running
+
+```
+python manage.py runserver 8000
+```
+
+which will start the server on port 8000. The sample site can be reached at `http://localhost:8000/home/page1`. 
+
+## Updating Content
+
+You can modify the site content (stored in the `db.sqlite3` file) via Django's admin interface: `http://localhost:8000/admin`, using the super-secure `admin` username and `password` password. 
+
+
