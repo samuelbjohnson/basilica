@@ -1,0 +1,7 @@
+<ul class="{{ css_classes.list|join:" " }}">
+	{% for link, title in entries %} 
+		<li class="{{ css_classes.page|join:" " }}">
+			<a href="{{ link }}" class="{{ css_classes.link|join:" " }}">{{ title }}</a>
+		</li>
+	{% endfor %}
+</ul>
